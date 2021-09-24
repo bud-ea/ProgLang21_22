@@ -24,10 +24,13 @@ int main()
 	{
 	case 1:
 		task1();
+		break;
 	case 2:
 		task2();
+		break;
 	case 3:
 		task3();
+		break;
 	default:
 		break;
 	}
