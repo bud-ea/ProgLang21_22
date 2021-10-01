@@ -8,6 +8,17 @@ void task1()
 
 void task2()
 {
+	int n = 0;
+	std::cout << "Input n:";
+	std::cin >> n;
+	//c_n^k = c_n^{k-1} * (n-(k-1))/k
+	int C_n_k = 1;
+	for (int k = 1; k <= n; k++)
+	{
+		std::cout << "C_n^" << k - 1 << " = " << C_n_k << std::endl;
+		C_n_k = C_n_k * (n - (k-1)) / (k);
+	}
+	std::cout << "C_n^" << n << " = " << C_n_k << std::endl;
 }
 
 void task3()
